@@ -1,0 +1,37 @@
+{% extends 'customer/base.html' %}
+{% block content %}
+{% load static%}
+<style>
+    /* Set background image for the container */
+    .container {
+        background-image: url("{% static 'bg2.jpg' %}");
+        background-size: cover;
+    }
+ 
+        /* Change font color for all <h1> tags */
+        h1 {
+            color: rgb(220, 255, 95);
+        }
+        .para{
+            color:azure;
+
+        }
+
+</style>
+<div class="container mb-5">
+
+    <div class="row justify-content-center mt-5">
+    
+        <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center">
+                     <h1><b>About Us!</b></h1>
+        </div>
+
+    </div>
+    <div class="row justify-content-center mt-1">
+        <div class="col-md-10 col-sm-12 offset-md-1 p-4 text-center">
+           <!--<img src="{% static 'bgpic.jpg' }" class="img-fluid rounded shadow-lg" alt="aboutusimg">-->
+            <p class="para"><b>Welcome to Foodophile, the ultimate online food ordering platform that connects you with your favorite local restaurants and delivers your meals directly to your doorstep. Our mission is to provide a seamless and convenient food delivery experience, making it easier than ever to enjoy delicious meals, whenever and wherever you want.</b></p>
+            </div>
+</div>
+</div>
+{% endblock content %}
